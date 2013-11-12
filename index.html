@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- test change test the order of these does matter -->
+    <title>TACCIMO MapViewer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" >
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="Interactive map viewer for TACCIMO.">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/vnd.microsoft.icon"/>
+
+    <script type="text/javascript" src="libs/seldon/libs/multigraph/multigraph-min-4.0.js"></script>
+    <script type="text/javascript">$ = window.multigraph.jQuery;</script>
+    <script type="text/javascript" src="libs/seldon/ajaxtransport.js"></script>
+    <script type="text/javascript">
+      fixJQueryAjaxTransport(jQuery);
+    </script>
+    <script type="text/javascript" src="libs/seldon/libs/OpenLayers212/OpenLayersBuild.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="libs/seldon/reset.css"/>
+
+    <link type="text/css" rel="stylesheet"
+          href="libs/seldon/libs/jquery-ui/smoothness/jquery-ui-1.10.1.custom/css/smoothness/jquery-ui-1.10.1.custom.min.css"/>
+    <script type="text/javascript"
+            src="libs/seldon/libs/jquery-ui/smoothness/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js"></script>
+
+    <script type="text/javascript" src="libs/seldon/libs/mustache/mustache.js"></script>
+    <script type="text/javascript" src="libs/seldon/libs/sprintf/sprintf-0.7-beta1.js"></script>
+    <script type="text/javascript" src="libs/seldon/eventEmitter.js"></script>
+    <script type="text/javascript" src="libs/seldon/listAccordion.js"></script>
+    <script type="text/javascript" src="libs/seldon/findArea.js"></script>
+    <script type="text/javascript" src="areas.js"></script>
+    <script type="text/javascript" src="libs/seldon/seldon.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="libs/seldon/seldon.css" />
+    <link rel="stylesheet" type="text/css" href="taccimo.css" />
+
+    <script type="text/javascript">
+      $('document').ready(function() {
+          seldon.init("config/taccimo_config.xml","EPSG:900913");
+      });
+    </script>
+
+    <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="libs/seldon/seldon-ie.css" />
+    <![endif]-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44767748-3', 'gro-wnc.org');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+
+  <body>
+
+    <div id="titleBar">
+      <h2>TACCIMO MapViewer</h2>
+    </div>
+
+    <div id="header">
+
+      <div class="header-bar">
+        <div id="btnTglLyrPick" class="btn-large header-bar">
+          <img id="tglLyrPickPic" src="icons/layers.png" class="icon" title="Toggle Map Layers"/>
+        </div>
+        <div id="btnTglMapTools" class="btn-large header-bar">
+          <img id="tglLegendPic" src="icons/legend.png" class="icon" title="Toggle Map Tools"/>
+        </div>
+        <div id="btnAbout" class="btn-large header-bar">
+          <img id="aboutPic" src="icons/about.png" class="icon" title="About"/>
+        </div>
+      </div>
+
+      <div id="btn-small-group" class="header-bar">
+        <div id="btnPan" class="header-bar">
+          <img id="panPic" src="icons/pan.png" class="icon" title="Pan"/>
+        </div>
+        <div id="btnZoomIn" class="header-bar hidden-phone-portrait hidden-phone-landscape">
+          <img id="zoomInPic" src="icons/zoom-in.png" class="icon" title="Zoom In"/>
+        </div>
+        <div id="btnZoomOut" class="header-bar hidden-phone-portrait hidden-phone-landscape">
+          <img id="zoomOutPic" src="icons/zoom-out.png" class="icon" title="Zoom Out"/>
+        </div>
+        <div id="btnID" class="header-bar">
+          <img id="idPic" src="icons/map-info.png" class="icon" title="Identify"/>
+        </div>
+        <div id="btnZoomExtent" class="header-bar">
+          <img id="zoomExtentPic" src="icons/zoom-extent.png" class="icon" title="Full Extent"/>
+        </div>
+        <div id="btnPrev" class="header-bar hidden-phone-portrait hidden-phone-landscape">
+          <img id="prevPic" src="icons/prev.png" class="icon" title="Previous Extent"/>
+        </div>
+        <div id="btnNext" class="header-bar hidden-phone-portrait hidden-phone-landscape">
+          <img id="nextPic" src="icons/next.png" class="icon" title="Next Extent"/>
+        </div>
+      </div>
+      <div id="txtFindArea" class="ui-widget" class="header-bar input">
+        <strong id="findAreaLabel">Find Area:</strong><input id="findArea"/>
+      </div>
+      <div id="mapBase" class="header-bar input input-select">
+        <strong>Base Map:</strong><select id="baseCombo"></select>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="footer">      
+      <div id="links">
+        <a href="http://www.gro-wnc.org/" class="link">http://www.gro-wnc.org</a>
+      </div>
+      <div id="latLonTracker" class="hidden-phone-portrait hidden-phone-landscape hidden-tablet-portrait"></div>
+    </div>
+
+    <div title="Map Layers" id="layerPickerDialog"></div>    
+
+    <div title="Map Tools" id="mapToolsDialog">
+      <div id="mapToolsAccordion">
+        <h3><a href="#shareMapAccordion">Share this Map</a></h3>
+        <div><textarea class="shareMapUrl" readonly="true"></textarea></div>
+        <h3><a href="#legendAccordion">Legend (click to clear layer)</a></h3>
+        <div id="legend"></div>
+      </div> 
+    </div>
+
+    <div id="propertyDialogsContainer"></div>
+    <div id="splashScreenContainer" title="TACCIMO MapViewer">
+      <div id="splashScreenContent"></div>
+    </div>
+  </body>
+</html>
