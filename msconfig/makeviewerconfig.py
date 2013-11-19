@@ -27,9 +27,9 @@ class Template:
     def render(self, dict):
         return self.contents % dict
 
-template = Template("grownc_config.tpl.xml")
+template = Template("taccimo_config.tpl.xml")
 		
-f = open("../config/grownc_config.xml", "w+")
+f = open("../config/taccimo_config.xml", "w+")
 f.write(template.render( {
             'SERVER_URL'                            : SERVER_URL
             }))
