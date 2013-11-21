@@ -1,0 +1,63 @@
+<config>
+	<application title="TACCIMO GIS Viewer">
+	</application>
+    <extent xmin="-15000000" ymin="2000000" xmax="-6000000" ymax="7000000" xminZoom="-15000000" yminZoom="2000000" xmaxZoom="-6000000" ymaxZoom="7000000" wkid="102100">		
+    </extent>
+	<server map_path="http://arcgisserver7.nemac.org/ArcGIS/">
+	</server>
+	<images>
+		<image label="Streets" name="Streets" selected="true" url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer" />
+		<image label="Basic" name="Basic" url="http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer" />
+		<image label="Relief" name="Relief" url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer" />
+		<image label="Terrain" name="Terrain" url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer" />
+		<image label="Imagery" name="Imagery" url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" />
+		<image label="Topo Map" name="Topo_Map" url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer" />
+		<image label="USA Topo" name="USA_Topo" url="http://server.arcgisonline.com/ArcGIS/rest/services/USA_Topo_Maps/MapServer" />
+		<image label="None" name="None" url="http://arcgisserver7.nemac.org/ArcGIS/rest/services/US/US_Jurisdictions_filled2/MapServer/" />
+	</images>
+	<mapviews>
+		<view label="General" name="General" selected="true">
+			<viewGroup name="Base Layers" />
+			<viewGroup name="PRISIM HISTORIC" />
+			<viewGroup name="Climate Wizard" />
+		</view>
+		<view label="Southeast(R8)" name="Southeast(R8)">
+			<viewGroup name="Base Layers" />
+			<viewGroup name="PRISIM HISTORIC" />
+			<viewGroup name="Climate Wizard" />
+		</view>
+		<view label="Cherokee NF Case Study" name="Cherokee NF Case Study">
+			<viewGroup name="Base Layers" />
+			<viewGroup name="PRISIM HISTORIC" />
+			<viewGroup name="Climate Wizard" />
+		</view>
+		<view label="Citico Case Study" name="Citico Case Study">
+			<viewGroup name="Base Layers" />
+			<viewGroup name="PRISIM HISTORIC" />
+			<viewGroup name="Climate Wizard" />
+		</view>
+		<view label="GW and Jeff NF Case Study" name="GW and Jeff NF Case Study">
+			<viewGroup name="Base Layers" />
+			<viewGroup name="PRISIM HISTORIC" />
+			<viewGroup name="Climate Wizard" />
+		</view>
+	</mapviews>
+	<wmsLayers>
+		<wmsGroup gid="G01" label="Base Layers" name="Base Layers">
+			<wmsSubgroup label="TACCIMO Base Layers">
+				<wmsLayer identify="true" layers="WindPower_Potential_Fair_or_Better" legend="%(SERVER_URL)s/.." lid="BEA" name="USFS Regions" srs="EPSG:3785" styles="default" url="%(SERVER_URL)s/.xml" visible="false" />	 
+			</wmsSubgroup>
+		</wmsGroup>
+		<wmsGroup gid="G02" label="PRISIM HISTORIC" name="PRISIM HISTORIC">
+		</wmsGroup>
+		<wmsGroup gid="G03" label="Climate Wizard" name="Climate Wizard">
+		</wmsGroup>
+	</wmsLayers>
+	<tools>
+		<tool label="Print Map" name="Print" />
+		<tool label="Export Map to JPG" name="Export" />
+		<tool label="Identify Features" linkFields="" name="Identify" />
+		<tool helpText="Click the map to see NDVI for the point. Or, enter coordinates and click Make Graph." label="Graph NDVI" name="Phenograph" />
+		<tool helpText="Copy the URL below to share this map with someone else." label="Share this Map" name="ShareMap" />
+	</tools>
+</config>
