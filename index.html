@@ -17,7 +17,7 @@
     <script type="text/javascript">
       fixJQueryAjaxTransport(jQuery);
     </script>
-    <script type="text/javascript" src="libs/seldon/libs/OpenLayers212/OpenLayersBuild.js"></script>
+    <script type="text/javascript" src="libs/seldon/libs/OpenLayers213/OpenLayersBuild.js"></script>
 
     <link type="text/css" rel="stylesheet" href="libs/seldon/reset.css"/>
 
@@ -39,7 +39,8 @@
 
     <script type="text/javascript">
       $('document').ready(function() {
-          seldon.init("config/taccimo_config.xml","EPSG:900913");
+          seldon.init("config/taccimo_config.xml", "EPSG:102100", "ArcGIS");
+		  <!-- seldon.init("config/taccimo_config.xml", "EPSG:900913"); -->
       });
     </script>
 
