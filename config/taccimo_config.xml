@@ -21,42 +21,41 @@
       <viewGroup name="PRISM HISTORIC" />
       <viewGroup name="Climate Wizard" />
       </view>
-    <view label="Southeast(R8)" name="Southeast(R8)">
+    <view label="Southeast(R8)" name="Southeast(R8)" zoom="yes" xmin="-12000000" ymin="2000000" xmax="-7000000" ymax="5000000">
       <viewGroup name="Base Layers" />
       <viewGroup name="PRISM HISTORIC" />
       <viewGroup name="Climate Wizard" />
       <viewGroup name="WaSSI" />
       </view>
-    <view label="Cherokee NF Case Study" name="Cherokee NF Case Study">
+    <view label="Cherokee NF Case Study" name="Cherokee NF Case Study" zoom="yes" xmin="-9670162" ymin="4140417" xmax="-8881348" ymax="4410500">
       <viewGroup name="Base Layers" />
       <viewGroup name="PRISM HISTORIC" />
       <viewGroup name="Climate Wizard" />
       <viewGroup name="Cherokee NF Case Study" />
       <viewGroup name="WaSSI" />
       </view>
-    <view label="Citico Case Study" name="Citico Case Study">
+    <view label="Citico Case Study" name="Citico Case Study" zoom="yes" xmin="-9387149" ymin="4209762" xmax="-9326209" ymax="4230628">
       <viewGroup name="Base Layers" />
       <viewGroup name="PRISM HISTORIC" />
       <viewGroup name="Climate Wizard" />
       <viewGroup name="WaSSI" />
       <viewGroup name="Citico Case Study" />
       </view>
-    <view label="GW and Jeff NF Case Study" name="GW and Jeff NF Case Study">
+    <view label="GW and Jeff NF Case Study" name="GW and Jeff NF Case Study" zoom="yes" xmin="-9599822" ymin="4346487" xmax="-8370629" ymax="4767352">
       <viewGroup name="Base Layers" />
       <viewGroup name="PRISM HISTORIC" />
       <viewGroup name="Climate Wizard" />
       <viewGroup name="WaSSI" />
       <viewGroup name="GW and Jeff NF Case Study" />
       </view>
-    <view label="Tellico Case Study" name="Tellico Case Study">
+    <view label="Tellico Case Study" name="Tellico Case Study" zoom="yes" xmin="-9403028" ymin="4196362" xmax="-9336976" ymax="4218977">
       <viewGroup name="Base Layers" />
       <viewGroup name="PRISM HISTORIC" />
       <viewGroup name="Climate Wizard" />
       <viewGroup name="WaSSI" />
       <viewGroup name="Tellico Case Study" />
       </view>
-    <view label="Giant Sequoia NM Case Study" name="Giant Sequoia NM Case Study">
-      
+    <view label="Giant Sequoia NM Case Study" name="Giant Sequoia NM Case Study" zoom="yes" xmin="-13285000" ymin="4188600" xmax="-13135000" ymax="4399600">
       <viewGroup name="Base Layers" />
       <viewGroup name="PRISM HISTORIC" />
       <viewGroup name="Climate Wizard" />
