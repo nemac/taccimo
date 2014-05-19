@@ -33,7 +33,6 @@
     <script type="text/javascript" src="libs/seldon/findArea.js"></script>
     <script type="text/javascript" src="areas.js"></script>
     <script type="text/javascript" src="libs/seldon/seldon.js"></script>
-
     <link rel="stylesheet" type="text/css" href="libs/seldon/seldon.css" />
     <link rel="stylesheet" type="text/css" href="taccimo.css" />
 
@@ -71,7 +70,10 @@
       </div>
 
       <div id="btn-small-group" class="header-bar">
-        <div id="btnPan" class="header-bar">
+        <div id="btnPrint" class="header-bar">
+          <img id="printPic" src="icons/print.png" class="icon" title="Print"/>
+        </div>
+	    <div id="btnPan" class="header-bar">
           <img id="panPic" src="icons/pan.png" class="icon" title="Pan"/>
         </div>
         <div id="btnZoomIn" class="header-bar hidden-phone-portrait hidden-phone-landscape">
@@ -127,5 +129,8 @@
     <div id="splashScreenContainer" title="TACCIMO MapViewer">
       <div id="splashScreenContent"></div>
     </div>
+    <div id="printMapContainer">
+      <div id="printMapContent"></div>
+    </div>	
   </body>
 </html>
