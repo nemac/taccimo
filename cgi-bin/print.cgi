@@ -57,6 +57,11 @@ try:
 			new_im.paste(im, (int(imgX),int(imgY)))	
 		printCount = printCount+1
 	new_im.save("printed_map.jpg")	
+	#3. Clean up after yourself:
+	dirPath = "print_temp"
+	fileList = os.listdir(dirPath)
+	for fileName in fileList:
+	 os.remove(dirPath+"/"+fileName)	
 except:
 	fo.write("error occured\n")
 	sys.exit(1)
