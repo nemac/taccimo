@@ -8,8 +8,8 @@ import os.path
 import time
 
 # Open a file
-fo = open("foo.txt", "wb")
-fo.write( "logging this junk!!\n");
+fo = open("print_log.txt", "wb")
+fo.write( "Opening print log!!\n");
 
 params = cgi.FieldStorage()
 try:
