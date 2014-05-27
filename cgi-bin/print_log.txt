@@ -1,0 +1,121 @@
+Opening print log!!
+got here
+min x:-190
+min y:-5
+width:1600height:882
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/15', 'x': -190, 'opacity': 100, 'y': -5}
+new x:0
+new y:0
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/16', 'x': 66, 'opacity': 100, 'y': -5}
+new x:256
+new y:0
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/17', 'x': 322, 'opacity': 100, 'y': -5}
+new x:512
+new y:0
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/18', 'x': 578, 'opacity': 100, 'y': -5}
+new x:768
+new y:0
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/19', 'x': 834, 'opacity': 100, 'y': -5}
+new x:1024
+new y:0
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/20', 'x': 1090, 'opacity': 100, 'y': -5}
+new x:1280
+new y:0
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/21', 'x': 1346, 'opacity': 100, 'y': -5}
+new x:1536
+new y:0
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/15', 'x': -190, 'opacity': 100, 'y': 251}
+new x:0
+new y:256
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/16', 'x': 66, 'opacity': 100, 'y': 251}
+new x:256
+new y:256
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/17', 'x': 322, 'opacity': 100, 'y': 251}
+new x:512
+new y:256
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/18', 'x': 578, 'opacity': 100, 'y': 251}
+new x:768
+new y:256
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/19', 'x': 834, 'opacity': 100, 'y': 251}
+new x:1024
+new y:256
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/20', 'x': 1090, 'opacity': 100, 'y': 251}
+new x:1280
+new y:256
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/21', 'x': 1346, 'opacity': 100, 'y': 251}
+new x:1536
+new y:256
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/15', 'x': -190, 'opacity': 100, 'y': 507}
+new x:0
+new y:512
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/16', 'x': 66, 'opacity': 100, 'y': 507}
+new x:256
+new y:512
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/17', 'x': 322, 'opacity': 100, 'y': 507}
+new x:512
+new y:512
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/18', 'x': 578, 'opacity': 100, 'y': 507}
+new x:768
+new y:512
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/19', 'x': 834, 'opacity': 100, 'y': 507}
+new x:1024
+new y:512
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/20', 'x': 1090, 'opacity': 100, 'y': 507}
+new x:1280
+new y:512
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/21', 'x': 1346, 'opacity': 100, 'y': 507}
+new x:1536
+new y:512
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/15', 'x': -190, 'opacity': 100, 'y': 763}
+new x:0
+new y:768
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/16', 'x': 66, 'opacity': 100, 'y': 763}
+new x:256
+new y:768
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/17', 'x': 322, 'opacity': 100, 'y': 763}
+new x:512
+new y:768
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/18', 'x': 578, 'opacity': 100, 'y': 763}
+new x:768
+new y:768
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/19', 'x': 834, 'opacity': 100, 'y': 763}
+new x:1024
+new y:768
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/20', 'x': 1090, 'opacity': 100, 'y': 763}
+new x:1280
+new y:768
+bbox:(0, 0, 256, 256)
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/21', 'x': 1346, 'opacity': 100, 'y': 763}
+new x:1536
+new y:768
+bbox:(0, 0, 256, 256)
+{'url': 'http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer?PROJECTION=EPSG%3A102100&UNITS=m&LAYERS=7&MAXEXTENT=NaN%2C%2C%2C&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A102100&BBOX=-10179575.977429,3465348.3851324,-6892172.2649406,4996534.9357406&WIDTH=1344&HEIGHT=626', 'x': 0, 'opacity': 100, 'y': 0}
+new x:190
+new y:5
+bbox:(0, 0, 1344, 626)

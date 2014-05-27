@@ -20,6 +20,7 @@ try:
 	settings['image']   = bool(int( params.getvalue("image",0) ))
 	imgXList = [] 
 	imgYList = []
+	fo.write("got here\n")
 	#1. read in the x and y coordinates
 	for tile in settings['tiles']:
 		# fo.write(str(tile)+"\n")
@@ -50,18 +51,21 @@ try:
 				imgY = str(val+abs(min(imgYList)))
 				fo.write("new y:"+str(imgY)+"\n")
 		im = Image.open('print_temp/'+str(printCount)+'.jpg')
-		# fo.write("bbox:"+str(im.getbbox())+"\n")
+		fo.write("bbox:"+str(im.getbbox())+"\n")
 		if im.mode == 'RGBA':
 			new_im.paste(im, (int(imgX),int(imgY)), im)
 		else:
 			new_im.paste(im, (int(imgX),int(imgY)))	
 		printCount = printCount+1
+	#3. resize map and add title
+	# new_im.thumbnail((800,600), Image.ANTIALIAS)
+	new_im.resize((200,200), Image.ANTIALIAS)
 	new_im.save("printed_map.jpg")	
-	#3. Clean up after yourself:
+	# 4. Clean up after yourself:
 	dirPath = "print_temp"
 	fileList = os.listdir(dirPath)
 	for fileName in fileList:
-	 os.remove(dirPath+"/"+fileName)	
+		os.remove(dirPath+"/"+fileName)	
 except:
 	fo.write("error occured\n")
 	sys.exit(1)
