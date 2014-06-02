@@ -3,9 +3,13 @@
 # sudo yum install python-simplejson
 
 import cgi, simplejson, sys, urllib
-import Image
+import Image, ImageChops, ImageDraw, ImageFont
 import os.path
 import time
+
+fontsize = 17  # starting font size
+font = ImageFont.truetype("fonts/arial.ttf", fontsize)
+fontBold = ImageFont.truetype("fonts/arialbd.ttf", fontsize)
 
 # Open a file
 fo = open("print_log.txt", "wb")
@@ -18,6 +22,7 @@ try:
 	settings['height']  = int( params.getvalue("height") )
 	settings['tiles']   = simplejson.loads( params.getvalue("tiles") )
 	settings['image']   = bool(int( params.getvalue("image",0) ))
+	settings['legends'] = simplejson.loads( params.getvalue("legends") )
 	imgXList = [] 
 	imgYList = []
 	fo.write("got here\n")
@@ -31,14 +36,14 @@ try:
 				imgYList.append(val)		
 	fo.write("min x:"+str(min(imgXList))+"\n")
 	fo.write("min y:"+str(min(imgYList))+"\n")
-	#2. create new canvas and past onto it
+	#3. create new canvas and past onto it
 	printCount = 0
 	imgX = 0 
 	imgY = 0
 	new_im = Image.new('RGB', (settings['width']+256,settings['height']+256))
+	background = Image.new('RGBA', (1440,900), (255, 255, 255, 255))
+	#4. Get all of the map tiles and assemble them accordingly
 	fo.write("width:"+str(settings['width']+256)+"height:"+str(settings['height']+256)+"\n")
-	# new_im = Image.new('RGB', (max(imgXList)-min(imgXList),max(imgYList)-min(imgYList)))
-	# fo.write("width:"+str(max(imgXList)-min(imgXList))+"height:"+str(max(imgYList)-min(imgYList))+"\n")
 	for tile in settings['tiles']:
 		fo.write(str(tile)+"\n")
 		for key, val in tile.iteritems():
@@ -56,12 +61,38 @@ try:
 			new_im.paste(im, (int(imgX),int(imgY)), im)
 		else:
 			new_im.paste(im, (int(imgX),int(imgY)))	
-		printCount = printCount+1
-	#3. resize map and add title
-	# new_im.thumbnail((800,600), Image.ANTIALIAS)
-	new_im.resize((200,200), Image.ANTIALIAS)
-	new_im.save("printed_map.jpg")	
-	# 4. Clean up after yourself:
+		printCount = printCount+1	
+	#2. Download the legends and assemble them accordingly
+	legendCount = 0
+	legends_palette = Image.new('RGBA', (400,800), (255, 255, 255, 255))
+	legend_y = 0
+	for legend in settings['legends']:
+		fo.write("legend: "+str(legend)+"\n")	
+		for key, val in legend.iteritems():
+			if (str(key)=='url'):
+				urllib.urlretrieve(str(val), 'print_temp/legends/'+str(legendCount)+'.png')		
+		legend_im = Image.open('print_temp/legends/'+str(legendCount)+'.png')
+		# legend_im.thumbnail((100,100), Image.ANTIALIAS)
+		legends_palette.paste(legend_im, (0,legend_y))
+		legendCount = legendCount+1
+		lgd_w,lgd_h=legend_im.size
+		legend_y = legend_y+lgd_h
+	#6. resize map
+	new_im.thumbnail((1100,700), Image.ANTIALIAS)
+	#7. save completed map on to white background
+	img_w,img_h=new_im.size
+	bg_w,bg_h=background.size
+	offset=(20,(bg_h-img_h)/2) 
+	# offset=((bg_w-img_w)/2,(bg_h-img_h)/2)
+	background.paste(new_im,offset)
+	background.paste(legends_palette,(img_w+30,(bg_h-img_h)/2))
+	#3. Add title, date printed to background
+	draw = ImageDraw.Draw(background)
+	draw.text((20,(bg_h-img_h)/2-25), "TACCIMO WebGIS Viewer", fill="black", font=fontBold)
+	draw.text((20,(bg_h-(bg_h-img_h)/2)), "Printed on: "+time.strftime("%m/%d/%Y"), fill="black", font=font)				
+	background.save("printed_map.jpg")	
+	# new_im.save("printed_map.jpg")	
+	#8. Clean up after yourself:
 	dirPath = "print_temp"
 	fileList = os.listdir(dirPath)
 	for fileName in fileList:
