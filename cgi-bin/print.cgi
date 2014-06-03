@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 
-# sudo yum install python-simplejson
+### Printing script for map tiles.
+###
+### by John D. Morgan
+### June 2, 2014
+### You will need to install to following lib to parse the json:
+###   	sudo yum install python-simplejson
+### To-do: make the temporary image file names based on date-time stamp and
+### when script runs clean out any old ones (e.g. a day old)
 
 import cgi, simplejson, sys, urllib
 import Image, ImageChops, ImageDraw, ImageFont
@@ -57,10 +64,16 @@ try:
 				fo.write("new y:"+str(imgY)+"\n")
 		im = Image.open('print_temp/'+str(printCount)+'.jpg')
 		fo.write("bbox:"+str(im.getbbox())+"\n")
+		# fo.write(str(im.getcolors())+"\n")
+		# fo.write(str(im.mode)+"\n")
 		if im.mode == 'RGBA':
-			new_im.paste(im, (int(imgX),int(imgY)), im)
+			if im.getbbox() is not None:
+				new_im.paste(im, (int(imgX),int(imgY)), im)
+				fo.write("rgba\n")
 		else:
-			new_im.paste(im, (int(imgX),int(imgY)))	
+			if im.getbbox() is not None:
+				new_im.paste(im, (int(imgX),int(imgY)))
+				fo.write("not rgba\n")
 		printCount = printCount+1	
 	#2. Download the legends and assemble them accordingly
 	legendCount = 0
@@ -88,7 +101,7 @@ try:
 	background.paste(legends_palette,(img_w+30,(bg_h-img_h)/2))
 	#3. Add title, date printed to background
 	draw = ImageDraw.Draw(background)
-	draw.text((20,(bg_h-img_h)/2-25), "TACCIMO WebGIS Viewer", fill="black", font=fontBold)
+	draw.text((20,(bg_h-img_h)/2-25), "TACCIMO Viewer", fill="black", font=fontBold)
 	draw.text((20,(bg_h-(bg_h-img_h)/2)), "Printed on: "+time.strftime("%m/%d/%Y"), fill="black", font=font)				
 	background.save("printed_map.jpg")	
 	# new_im.save("printed_map.jpg")	
