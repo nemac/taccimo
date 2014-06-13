@@ -1,5 +1,5 @@
 /*
-Custom overrides for the TACCIMO GIS viewer
+Custom overrides for the taccimo viewer
 */
 
 /*
@@ -19,7 +19,7 @@ a {
 Header Styles
 */
 #titleBar {
-    background: #7b5323;
+    background: #6c9d30;
 }
 
 #titleBar h2 {
@@ -27,21 +27,25 @@ Header Styles
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
+    font-style: italic;
     letter-spacing: -1px;
 }
 
 #header {
-    background: #edd8bf;
+    background: #fff;
+    border-bottom:thick solid #6c9d30;
 }
 
 /*
 Footer Styles
 */
 #footer {
-    background: #edd8bf;
+    background: #00aeef;
+    color: #fff;
 }
 
 #footer a {
+    color: #fff;
     border-right: 0;
 }
 
