@@ -63,9 +63,8 @@
       </view>
     <view label="Climate Change Atlas" name="Climate Change Atlas">
       <viewGroup name="Base Layers" />
-      <viewGroup name="PRISM HISTORIC" />
-      <viewGroup name="Climate Wizard" />
-      </view>
+      <viewGroup name="Climate Change Atlas" />
+    </view>
     <view label="California-MC1" name="California-MC1">
       <viewGroup name="Base Layers" />
       <viewGroup name="PRISM HISTORIC" />
@@ -100,6 +99,9 @@
 	  </wmsSubgroup>
      </wmsGroup>
      <wmsGroup gid="G03" label="Climate Wizard" name="Climate Wizard">
+	  <wmsSubgroup label="WMS Layers">
+		<wmsLayer identify="true" layers="WMS" legend="*.PNG" lid="HT" name="one wms layer" srs="EPSG:102100" styles="default" url="http://www.climatewizard.org:6080/arcgis/services/ClimateWizard/US/ImageServer/WMSServer" visible="true" /> 
+	  </wmsSubgroup>	
      </wmsGroup>
      <wmsGroup gid="G04" label="Cherokee NF Case Study" name="Cherokee NF Case Study">
 	  <wmsSubgroup label="Cherokee National Forest">
@@ -199,7 +201,21 @@
 		<wmsLayer identify="true" layers="1" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/GiantSequoia_CaseStudy/Historic_Vegetation_Type_-_1977.PNG" lid="HVT77" name="Historic Vegetation Type-1977" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/GiantSequoia_CaseStudy/MapServer/WMSServer" visible="true" />
 	  </wmsSubgroup>
      </wmsGroup>
-	 <wmsGroup gid="G10" label="SLAMM Regional" name="SLAMM">
+	 <wmsGroup gid="G10" label="Climate Change Atlas" name="Climate Change Atlas">
+	  <wmsSubgroup label="Climate Change Atlas">
+		 <wmsLayer
+		 lid="NEW"
+		 visible="false"
+		 url="http://mist.nemac.org/ArcGIS/services/OptIn/OptIn_Viewer1/MapServer/WMSServer?TRANSPARENT=true"
+		 srs="EPSG:4326"
+		 layers="Wetlands"
+		 styles="default"
+		 identify="true"
+		 name="Wetlands" 
+		 legend="http://rain.nemac.org/~derek/OptInSWNC/legends/wetlands.png"/> 
+      </wmsSubgroup>
+	 </wmsGroup>
+	 <wmsGroup gid="G11" label="SLAMM Regional" name="SLAMM">
 	  <wmsSubgroup label="SLAMM Regional">
 		<wmsLayer identify="true" layers="3" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/SLAMM_Regional/SLAMM_Change_Hotspots.PNG" lid="SLAMMCH" name="SLAMM Change Hotspots" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/SLAMM_Regional/MapServer/WMSServer" visible="true" />
 		<wmsLayer identify="true" layers="2" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/SLAMM_Regional/SLAMM_A2_2100.PNG" lid="SLAMM100" name="SLAMM A2 2100" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/SLAMM_Regional/MapServer/WMSServer" visible="true" />

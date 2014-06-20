@@ -32,7 +32,6 @@ try:
 	settings['legends'] = simplejson.loads( params.getvalue("legends") )
 	imgXList = [] 
 	imgYList = []
-	fo.write("got here\n")
 	#1. read in the x and y coordinates
 	for tile in settings['tiles']:
 		# fo.write(str(tile)+"\n")
@@ -63,17 +62,12 @@ try:
 				imgY = str(val+abs(min(imgYList)))
 				fo.write("new y:"+str(imgY)+"\n")
 		im = Image.open('print_temp/'+str(printCount)+'.jpg')
-		fo.write("bbox:"+str(im.getbbox())+"\n")
-		# fo.write(str(im.getcolors())+"\n")
-		# fo.write(str(im.mode)+"\n")
 		if im.mode == 'RGBA':
 			if im.getbbox() is not None:
 				new_im.paste(im, (int(imgX),int(imgY)), im)
-				fo.write("rgba\n")
 		else:
 			if im.getbbox() is not None:
 				new_im.paste(im, (int(imgX),int(imgY)))
-				fo.write("not rgba\n")
 		printCount = printCount+1	
 	#2. Download the legends and assemble them accordingly
 	legendCount = 0
@@ -101,7 +95,7 @@ try:
 	background.paste(legends_palette,(img_w+30,(bg_h-img_h)/2))
 	#3. Add title, date printed to background
 	draw = ImageDraw.Draw(background)
-	draw.text((20,(bg_h-img_h)/2-25), "TACCIMO Viewer", fill="black", font=fontBold)
+	draw.text((20,(bg_h-img_h)/2-25), "U.S Forest Change Assessment Viewer", fill="black", font=fontBold)
 	draw.text((20,(bg_h-(bg_h-img_h)/2)), "Printed on: "+time.strftime("%m/%d/%Y"), fill="black", font=font)				
 	background.save("printed_map.jpg")	
 	# new_im.save("printed_map.jpg")	
