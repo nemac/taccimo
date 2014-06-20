@@ -1,178 +1,97 @@
 Opening print log!!
-got here
-min x:-156
-min y:-33
-width:1852height:929
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/9', 'x': -156, 'opacity': 100, 'y': -33}
+min x:-140
+min y:-183
+width:1792height:1002
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/103/61', 'x': -140, 'opacity': 100, 'y': -183}
 new x:0
 new y:0
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/10', 'x': 100, 'opacity': 100, 'y': -33}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/103/62', 'x': 116, 'opacity': 100, 'y': -183}
 new x:256
 new y:0
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/11', 'x': 356, 'opacity': 100, 'y': -33}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/103/63', 'x': 372, 'opacity': 100, 'y': -183}
 new x:512
 new y:0
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/12', 'x': 612, 'opacity': 100, 'y': -33}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/103/64', 'x': 628, 'opacity': 100, 'y': -183}
 new x:768
 new y:0
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/13', 'x': 868, 'opacity': 100, 'y': -33}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/103/65', 'x': 884, 'opacity': 100, 'y': -183}
 new x:1024
 new y:0
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/14', 'x': 1124, 'opacity': 100, 'y': -33}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/103/66', 'x': 1140, 'opacity': 100, 'y': -183}
 new x:1280
 new y:0
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/15', 'x': 1380, 'opacity': 100, 'y': -33}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/103/67', 'x': 1396, 'opacity': 100, 'y': -183}
 new x:1536
 new y:0
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/24/16', 'x': 1636, 'opacity': 100, 'y': -33}
-new x:1792
-new y:0
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/9', 'x': -156, 'opacity': 100, 'y': 223}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/104/61', 'x': -140, 'opacity': 100, 'y': 73}
 new x:0
 new y:256
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/10', 'x': 100, 'opacity': 100, 'y': 223}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/104/62', 'x': 116, 'opacity': 100, 'y': 73}
 new x:256
 new y:256
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/11', 'x': 356, 'opacity': 100, 'y': 223}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/104/63', 'x': 372, 'opacity': 100, 'y': 73}
 new x:512
 new y:256
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/12', 'x': 612, 'opacity': 100, 'y': 223}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/104/64', 'x': 628, 'opacity': 100, 'y': 73}
 new x:768
 new y:256
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/13', 'x': 868, 'opacity': 100, 'y': 223}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/104/65', 'x': 884, 'opacity': 100, 'y': 73}
 new x:1024
 new y:256
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/14', 'x': 1124, 'opacity': 100, 'y': 223}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/104/66', 'x': 1140, 'opacity': 100, 'y': 73}
 new x:1280
 new y:256
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/15', 'x': 1380, 'opacity': 100, 'y': 223}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/104/67', 'x': 1396, 'opacity': 100, 'y': 73}
 new x:1536
 new y:256
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/25/16', 'x': 1636, 'opacity': 100, 'y': 223}
-new x:1792
-new y:256
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/9', 'x': -156, 'opacity': 100, 'y': 479}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/105/61', 'x': -140, 'opacity': 100, 'y': 329}
 new x:0
 new y:512
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/10', 'x': 100, 'opacity': 100, 'y': 479}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/105/62', 'x': 116, 'opacity': 100, 'y': 329}
 new x:256
 new y:512
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/11', 'x': 356, 'opacity': 100, 'y': 479}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/105/63', 'x': 372, 'opacity': 100, 'y': 329}
 new x:512
 new y:512
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/12', 'x': 612, 'opacity': 100, 'y': 479}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/105/64', 'x': 628, 'opacity': 100, 'y': 329}
 new x:768
 new y:512
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/13', 'x': 868, 'opacity': 100, 'y': 479}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/105/65', 'x': 884, 'opacity': 100, 'y': 329}
 new x:1024
 new y:512
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/14', 'x': 1124, 'opacity': 100, 'y': 479}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/105/66', 'x': 1140, 'opacity': 100, 'y': 329}
 new x:1280
 new y:512
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/15', 'x': 1380, 'opacity': 100, 'y': 479}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/105/67', 'x': 1396, 'opacity': 100, 'y': 329}
 new x:1536
 new y:512
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/26/16', 'x': 1636, 'opacity': 100, 'y': 479}
-new x:1792
-new y:512
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/9', 'x': -156, 'opacity': 100, 'y': 735}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/106/61', 'x': -140, 'opacity': 100, 'y': 585}
 new x:0
 new y:768
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/10', 'x': 100, 'opacity': 100, 'y': 735}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/106/62', 'x': 116, 'opacity': 100, 'y': 585}
 new x:256
 new y:768
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/11', 'x': 356, 'opacity': 100, 'y': 735}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/106/63', 'x': 372, 'opacity': 100, 'y': 585}
 new x:512
 new y:768
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/12', 'x': 612, 'opacity': 100, 'y': 735}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/106/64', 'x': 628, 'opacity': 100, 'y': 585}
 new x:768
 new y:768
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/13', 'x': 868, 'opacity': 100, 'y': 735}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/106/65', 'x': 884, 'opacity': 100, 'y': 585}
 new x:1024
 new y:768
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/14', 'x': 1124, 'opacity': 100, 'y': 735}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/106/66', 'x': 1140, 'opacity': 100, 'y': 585}
 new x:1280
 new y:768
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/15', 'x': 1380, 'opacity': 100, 'y': 735}
+{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/8/106/67', 'x': 1396, 'opacity': 100, 'y': 585}
 new x:1536
 new y:768
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/6/27/16', 'x': 1636, 'opacity': 100, 'y': 735}
-new x:1792
-new y:768
-bbox:(0, 0, 256, 256)
-not rgba
-{'url': 'http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer?PROJECTION=EPSG%3A102100&UNITS=m&LAYERS=3&MAXEXTENT=NaN%2C%2C%2C&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A102100&BBOX=-14019772.278475,3281899.5172479,-10115980.369895,4928047.3583971&WIDTH=1596&HEIGHT=673', 'x': 0, 'opacity': 100, 'y': 0}
-new x:156
-new y:33
-bbox:(0, 0, 1596, 673)
-rgba
-{'url': 'http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer?PROJECTION=EPSG%3A102100&UNITS=m&LAYERS=7&MAXEXTENT=NaN%2C%2C%2C&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A102100&BBOX=-14019772.278475,3281899.5172479,-10115980.369895,4928047.3583971&WIDTH=1596&HEIGHT=673', 'x': 0, 'opacity': 100, 'y': 0}
-new x:156
-new y:33
-bbox:(0, 0, 1596, 673)
-rgba
+{'url': 'http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer?PROJECTION=EPSG%3A102100&UNITS=m&LAYERS=2&MAXEXTENT=NaN%2C%2C%2C&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A102100&BBOX=-10402772.100022,3345495.1247813,-9463513.8964538,3801671.3095873&WIDTH=1536&HEIGHT=746', 'x': 0, 'opacity': 100, 'y': 0}
+new x:140
+new y:183
+{'url': 'http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer?PROJECTION=EPSG%3A102100&UNITS=m&LAYERS=7&MAXEXTENT=NaN%2C%2C%2C&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A102100&BBOX=-10402772.100022,3345495.1247813,-9463513.8964538,3801671.3095873&WIDTH=1536&HEIGHT=746', 'x': 0, 'opacity': 100, 'y': 0}
+new x:140
+new y:183
 legend: {'url': 'http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Counties.PNG'}
-legend: {'url': 'http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Ecomap2007_-_Provinces.PNG'}
+legend: {'url': 'http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Protected_Areas_(PAD-US).PNG'}
 error occured

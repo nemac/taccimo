@@ -1,3 +1,5 @@
 msconfig/vlayers.map
 *~
 .DS_STORE
+cgi-bin/print_temp/*
+cgi-bin/print_log.txt
