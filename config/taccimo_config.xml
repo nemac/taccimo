@@ -16,7 +16,7 @@
     <image label="None" name="None" url="http://arcgisserver7.nemac.org/ArcGIS/rest/services/US/US_Jurisdictions_filled2/MapServer/" />
     </images>
   <mapviews>
-    <view label="General" name="General" selected="true">
+    <view label="General" name="General">
       <viewGroup name="Base Layers" />
       <viewGroup name="PRISM HISTORIC" />
       <viewGroup name="Climate Wizard" />
@@ -61,7 +61,7 @@
       <viewGroup name="Climate Wizard" />
       <viewGroup name="Giant Sequoia NM Case Study" />
       </view>
-    <view label="Climate Change Atlas" name="Climate Change Atlas">
+    <view label="Climate Change Atlas" name="Climate Change Atlas" selected="true">
       <viewGroup name="Base Layers" />
       <viewGroup name="Climate Change Atlas" />
     </view>
@@ -80,16 +80,16 @@
   <wmsLayers>
      <wmsGroup gid="G01" label="Base Layers" name="Base Layers">
       <wmsSubgroup label="TACCIMO Base Layers">
-		<wmsLayer identify="true" layers="10" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/National_Forests.PNG" lid="NF" name="National Forests" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer" visible="true" /> 
-		<wmsLayer identify="true" layers="9" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Experimental_Forests.PNG" lid="EF" name="Experimental Forests" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer" visible="true" /> 
-		<wmsLayer identify="true" layers="8" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/States.PNG" lid="STA" name="States" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer" visible="true" /> 
-		<wmsLayer identify="true" layers="7" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Counties.PNG" lid="CNTY" name="Counties" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer" visible="true" /> 
-		<wmsLayer identify="true" layers="6" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Watersheds_(12-digit_HUC).PNG" lid="WS12" name="Watersheds (12 Digit HUC)" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer" visible="true" /> 
-		<wmsLayer identify="true" layers="5" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/USFS_Regions.PNG" lid="USFS" name="USFS Regions" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer" visible="true" /> 
-		<wmsLayer identify="true" layers="4" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/TACCIMO_Subregions.PNG" lid="TSR" name="TACCIMO Subegions" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer" visible="true" /> 
-		<wmsLayer identify="true" layers="3" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Ecomap2007_-_Provinces.PNG" lid="EM" name="Ecomap2007 - Provinces" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer" visible="true" /> 
-		<wmsLayer identify="true" layers="2" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Protected_Areas_(PAD-US).PNG" lid="PA" name="Protected Areas (PAD-US)" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer" visible="true" /> 
-		<wmsLayer identify="true" layers="1" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Wilderness_Areas.PNG" lid="WA" name="Wilderness Areas" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/TACCIMO_baselayers_2013/MapServer/WMSServer" visible="true" /> 
+		<wmsLayer identify="true" layers="9" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/National_Forests.PNG" lid="NF" name="National Forests" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+		<wmsLayer identify="true" layers="8" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Experimental_Forests.PNG" lid="EF" name="Experimental Forests" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+		<wmsLayer identify="true" layers="7" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/States.PNG" lid="STA" name="States" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+		<wmsLayer identify="true" layers="6" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Counties.PNG" lid="CNTY" name="Counties" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+		<wmsLayer identify="true" layers="5" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Watersheds_(12-digit_HUC).PNG" lid="WS12" name="Watersheds (12 Digit HUC)" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+		<wmsLayer identify="true" layers="4" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/USFS_Regions.PNG" lid="USFS" name="USFS Regions" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+		<wmsLayer identify="true" layers="3" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/TACCIMO_Subregions.PNG" lid="TSR" name="TACCIMO Subegions" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+		<wmsLayer identify="true" layers="2" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Ecomap2007_-_Provinces.PNG" lid="EM" name="Ecomap2007 - Provinces" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+		<wmsLayer identify="true" layers="1" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Protected_Areas_(PAD-US).PNG" lid="PA" name="Protected Areas (PAD-US)" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+		<!-- <wmsLayer identify="true" layers="1" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Wilderness_Areas.PNG" lid="WA" name="Wilderness Areas" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServerr" visible="true" />  -->
 	  </wmsSubgroup>
      </wmsGroup>
      <wmsGroup gid="G02" label="PRISM Historic" name="PRISM HISTORIC">
@@ -201,18 +201,15 @@
 		<wmsLayer identify="true" layers="1" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/GiantSequoia_CaseStudy/Historic_Vegetation_Type_-_1977.PNG" lid="HVT77" name="Historic Vegetation Type-1977" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/GiantSequoia_CaseStudy/MapServer/WMSServer" visible="true" />
 	  </wmsSubgroup>
      </wmsGroup>
-	 <wmsGroup gid="G10" label="Climate Change Atlas" name="Climate Change Atlas">
-	  <wmsSubgroup label="Climate Change Atlas">
-		 <wmsLayer
-		 lid="NEW"
-		 visible="false"
-		 url="http://mist.nemac.org/ArcGIS/services/OptIn/OptIn_Viewer1/MapServer/WMSServer?TRANSPARENT=true"
-		 srs="EPSG:4326"
-		 layers="Wetlands"
-		 styles="default"
-		 identify="true"
-		 name="Wetlands" 
-		 legend="http://rain.nemac.org/~derek/OptInSWNC/legends/wetlands.png"/> 
+	 <wmsGroup gid="G10" label="Climate Change Atlas" name="Climate Change Atlas" selected="true">
+	  <wmsSubgroup label="Climate Model" type="radiobutton">
+		 <wmsLayer selected="true" identify="false" layers="1" legend="" lid="CTA" name="Current (Historic)" srs="" styles="default" url="" visible="true" />
+		 <wmsLayer identify="false" layers="50" legend="" lid="A1F1TA" name="GCM Average High (A1F1)" srs="" styles="default" url="" visible="true" /> 
+		 <wmsLayer identify="false" layers="99" legend="" lid="B1TA" name="GCM Average Low (B1)" srs="" styles="default" url="" visible="true" /> 
+      </wmsSubgroup>
+	  <wmsSubgroup label="Tree Species" type="dropdownbox">
+		 <wmsLayer identify="true" layers="46" legend="" lid="ABTA" name="American Basswood/Tilia americana" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/treeatlas_medium/MapServer/WMSServer" visible="true" /> 
+		 <wmsLayer identify="true" layers="12" legend="" lid="ABFG" name="American Beech/Fagus grandifolia" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/treeatlas_medium/MapServer/WMSServer" visible="true" /> 
       </wmsSubgroup>
 	 </wmsGroup>
 	 <wmsGroup gid="G11" label="SLAMM Regional" name="SLAMM">
