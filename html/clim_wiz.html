@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>OpenLayers Example</title>
+  <script type="text/javascript" src="libs/seldon/libs/OpenLayers213/OpenLayersBuild.js"></script>
+  <style>html, head, body { width: 100%; height: 100% }</style>
+</head>
+<body>
+	<div style="width:100%; height:100%" id="map"></div>
+	<script defer="defer" type="text/javascript">
+        //http://www.climatewizard.org:6080/ArcGIS/rest/services/ClimateWizard/US/ImageServer/exportImage/exportImage?transparent=true&mosaicRule=%7B%22mosaicMethod%22%3A%22esriMosaicAttribute%22%2C%22where%22%3A%22Name%20%3D%20%27c%5Fensemble%5F50%5Fa2%5Ftmean%5F14%5F2040%5F2069%27%22%2C%22sortField%22%3A%22Name%22%7D&interpolation=RSP%5FNearestNeighbor&format=png8&bboxSR=102100&size=1309%2C744&bbox=%2D16903588%2E481617223%2C928862%2E0385175138%2C%2D4096411%2E5183827765%2C8208113%2E116169484&f=image&imageSR=102100&noData=0
+		//interpolation=RSP_NearestNeighbor
+		//mosaicRule={"mosaicMethod":"esriMosaicAttribute",
+			//"where":"Name = 'c_ensemble_50_a2_tmean_14_2040_2069'",
+			//"sortField":"Name"}
+		//noData=0
+        var mapOptions = {
+            maxExtent: new OpenLayers.Bounds(-174,18.4,-63.5,71),
+            maxResolution: 0.25,
+            projection: "EPSG:4326"};
+        map = new OpenLayers.Map( 'map', mapOptions );
+        layer = new OpenLayers.Layer.ArcGIS93Rest( "ArcGIS Server Layer",
+                "http://www.climatewizard.org:6080/ArcGIS/rest/services/ClimateWizard/US/ImageServer/exportImage/exportImage");
+
+        var paramArray = new Array();
+        paramArray[0] = "interpolation=RSP_NearestNeighbor";
+        paramArray[1] = "mosaicRule={";
+			paramArray[2] = "'mosaicMethod':'esriMosaicAttribute'";
+			paramArray[3] = "'where':'Name='c_ensemble_50_a2_tmean_14_2040_2069''";
+			paramArray[4] = "'sortField':'Name'}";
+			paramArray[5] = "noData=0";
+        layer.mergeNewParams(paramArray);
+        map.addLayer(layer);
+        map.addControl( new OpenLayers.Control.MousePosition() );
+		map.setCenter(new OpenLayers.LonLat(-115, 45), 0);
+    </script>
+</body>
+</html>
