@@ -45,21 +45,40 @@
                 <wmsLayer identify="true" layers="1" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Protected_Areas_(PAD-US).PNG" lid="PA" name="Protected Areas (PAD-US)" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
             </wmsSubgroup>
         </wmsGroup>
-        <wmsGroup gid="G02" label="WaSSI" name="WaSSI">
-            <wmsSubgroup label="WaSSI Layers">
-                <wmsLayer identify="true" layers="12" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/Precipitation_Change_CGC1_Climate_Scenario.PNG" lid="PCCCS" name="Precipitation Change CGC1 Climate Scenario" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="11" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/Temperature_Change_CGC1_Climate_Scenario.PNG" lid="TCCCS" name="Temperature Change CGC1 Climate Scenario" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="10" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/Precipitation_Change_Had2CMSul_Climate_Scenario.PNG" lid="PCHCS" name="Precipitation Change Had2CMSul Climate Scenario" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="9" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/Temperature_Change_Had2CMSul_Climate_Scenario.PNG" lid="TCHCS" name="Temperature Change Had2CMSul Climate Scenario" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="8" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/Forest_Landuse_Change.PNG" lid="FORLUC" name="Forest Landuse Change" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="7" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/Urban_Landuse_Change.PNG" lid="URBLUC" name="Urban Landuse Change" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="6" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/Population_1995.PNG" lid="POP95" name="Population 1995" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="5" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/Population_2020.PNG" lid="POP20" name="Population 2020" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="4" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/WaSSI_Baseline_(1995).PNG" lid="WBL" name="WaSSI Baseline (1995)" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="3" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/WaSSI_Change_CGC1_Climate.PNG" lid="WCCC" name="WaSSI Change CGC1 Climate" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="2" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/WaSSI_Change_Had2CMSul_Climate.PNG" lid="WCHC" name="WaSSI Change Had2CMSul Climate" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="1" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/WaSSI_Change_CGC1_+_Landuse_+_Population.PNG" lid="WCC+LU+POP" name="WaSSI Change CGC1 + Landuse + Population" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
-                <wmsLayer identify="true" layers="0" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/WaSSI/WaSSI_Change_Had2CMSul_+_Landuse_+_Population.PNG" lid="WCH+LU+POP" name="WaSSI Change Had2CMSul + Landuse + Population" srs="EPSG:102100" styles="default" url="http://www.taccimogis.sgcp.ncsu.edu/ArcGIS/services/TACCIMO/WaSSI/MapServer/WMSServer" visible="true" />
+        <wmsGroup gid="G01" label="Base Layers" name="Base Layers">
+            <wmsSubgroup label="TACCIMO Base Layers">
+                <wmsLayer identify="true" layers="9" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/National_Forests.PNG" lid="NF" name="National Forests" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+                <wmsLayer identify="true" layers="8" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Experimental_Forests.PNG" lid="EF" name="Experimental Forests" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+                <wmsLayer identify="true" layers="7" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/States.PNG" lid="STA" name="States" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+                <wmsLayer identify="true" layers="6" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Counties.PNG" lid="CNTY" name="Counties" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+                <wmsLayer identify="true" layers="5" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Watersheds_(12-digit_HUC).PNG" lid="WS12" name="Watersheds (12 Digit HUC)" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+                <wmsLayer identify="true" layers="4" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/USFS_Regions.PNG" lid="USFS" name="USFS Regions" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+                <wmsLayer identify="true" layers="3" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/TACCIMO_Subregions.PNG" lid="TSR" name="TACCIMO Subegions" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+                <wmsLayer identify="true" layers="2" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Ecomap2007_-_Provinces.PNG" lid="EM" name="Ecomap2007 - Provinces" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+                <wmsLayer identify="true" layers="1" legend="http://www.taccimogis.sgcp.ncsu.edu/TACCIMODevGIS/TACCIMO_Beta/GIS/assets/Mashup_Legends/TACCIMO/TACCIMO_BaseLayers_2013/Protected_Areas_(PAD-US).PNG" lid="PA" name="Protected Areas (PAD-US)" srs="EPSG:102100" styles="default" url="http://wassimap.sgcp.ncsu.edu:8399/arcgis/services/taccimo/TACCIMO_baselayers/MapServer/WMSServer" visible="true" /> 
+            </wmsSubgroup>
+        </wmsGroup>		
+        <wmsGroup gid="G05" label="Climate Wizard" name="Climate Wizard">
+            <wmsSubgroup label="Climate Wizard">
+				<restLayer
+					name="Climate Wizard"
+					url="http://www.climatewizard.org:6080/ArcGIS/rest/services/ClimateWizard/US/ImageServer/exportImage/exportImage"
+					legend="yaya-placeholder.png"
+					lid="CC9999"
+					visible="true">
+					<param name="noData" value="0" />
+					<param name="format" value="png" />
+					<param name="interpolation" value="RSP_NearestNeighbor" />
+					<param name="transparent" value="true" />
+					<param name="mosaicRule">
+					<param name="mosaicMethod" value="esriMosaicAttribute" />
+					<param name="where" value="Name = 'm_ensemble_50_a2_pptPct_14_2040_2069'" />
+					<param name="sortField" value="Name" />
+					</param>
+					<param name="imageSR" value="102100" />
+					<param name="bboxSR" value="102100" />
+					<param name="f" value="json" />
+				</restLayer>
             </wmsSubgroup>
         </wmsGroup>
         <wmsGroup gid="G03" label="Climate Change Atlas" name="Climate Change Atlas" selected="true">
