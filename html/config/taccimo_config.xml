@@ -84571,7 +84571,7 @@ v  <restLayer
         <tool name="Print" label="Print Map"
           service_url="http://olprint.nemac.org"
           service_name="print"
-          title="U.S Forest Change Assessment Viewer"/>
+          title="TACCIMO Map Viewer"/>
         <tool label="Export Map to JPG" name="Export" />
         <tool label="Identify Features" linkFields="" name="Identify" />
         <tool helpText="Click the map to see NDVI for the point. Or, enter coordinates and click Make Graph." label="Graph NDVI" name="Phenograph" />
